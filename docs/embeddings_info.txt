@@ -1,0 +1,75 @@
+Embeddings are numerical representations of text. They convert words, sentences, or documents into vectors of numbers. These vectors allow machines to compare meaning mathematically.
+
+Similar texts usually have similar embeddings. For example, "car" and "vehicle" are close in vector space. This reflects their related meaning.
+
+Embeddings focus on semantic meaning rather than exact keywords. This allows systems to understand context better. It improves search quality compared to keyword matching.
+
+In a RAG system, embeddings are used for retrieval. Each chunk of text is converted into a vector. These vectors are stored in a vector database.
+
+When a user asks a question, the query is also converted into an embedding. This query vector is compared with stored vectors. The system retrieves the most similar chunks.
+
+Cosine similarity is a common way to compare embeddings. It measures the angle between two vectors. A higher cosine similarity means higher semantic similarity.
+
+Dot product is another similarity method. It multiplies corresponding values and sums them. It is often used in optimized retrieval systems.
+
+Euclidean distance measures the straight-line distance between vectors. Smaller distances indicate higher similarity. It is sensitive to vector magnitude.
+
+Chunking is the process of splitting text into smaller parts. Each chunk is embedded separately. Good chunking improves retrieval performance.
+
+If chunks are too small, they may lack context. If chunks are too large, they may reduce precision. Finding the right balance is important.
+
+Sentence-based chunking groups sentences together. For example, three sentences can form one chunk. This keeps meaning more complete.
+
+Overlapping chunking repeats some sentences between chunks. This helps preserve context across boundaries. It improves continuity in retrieval.
+
+A vector database stores embeddings efficiently. It allows fast similarity search. Examples include FAISS and Chroma.
+
+Retrieval returns the top-k most similar chunks. For example, the system may return the top 3 matches. These are passed to the language model.
+
+The language model uses retrieved chunks as context. This helps generate accurate answers. It reduces hallucination.
+
+Without retrieval, a model relies only on its training data. This can lead to incorrect answers. RAG improves reliability by adding external knowledge.
+
+Embeddings are usually high-dimensional vectors. Common sizes include 384, 768, or 1024 dimensions. Higher dimensions can capture more detail.
+
+Dense embeddings are standard in modern NLP. They store meaning in continuous values. This differs from sparse keyword methods.
+
+Sparse retrieval methods like BM25 rely on keywords. They match exact or weighted terms. They do not capture deep semantic meaning.
+
+Hybrid search combines dense and sparse methods. It improves retrieval accuracy. Many real systems use this approach.
+
+Normalization is sometimes applied to embeddings. This scales vectors to unit length. It makes cosine similarity more stable.
+
+Embeddings can represent more than text. They can also encode images, audio, and other data. This enables multimodal systems.
+
+Sentence embeddings represent entire sentences. They capture meaning beyond individual words. This makes them useful for search.
+
+Document embeddings represent larger text blocks. These include paragraphs or full articles. They are useful for summarization and retrieval.
+
+Query embeddings represent user input. They are compared with stored embeddings. This enables semantic search.
+
+Indexing is the preparation phase in RAG. It includes chunking, embedding, and storing data. This happens before user queries.
+
+Retrieval is the search phase in RAG. It finds relevant chunks using similarity. This happens when a query is asked.
+
+Generation is the final phase in RAG. The model produces an answer using retrieved context. This ensures grounded responses.
+
+Cosine similarity focuses on vector direction. It ignores magnitude differences. This makes it effective for semantic comparison.
+
+Dot product considers both direction and magnitude. It can favor larger vectors. Some models are optimized for it.
+
+A good embedding model places related text close together. This improves retrieval quality. Model choice is important.
+
+Poor chunking can reduce performance. It may split important context incorrectly. Careful design is required.
+
+Good data quality improves embeddings. Clear and focused text leads to better vectors. Noisy data reduces accuracy.
+
+RAG systems depend on both retrieval and generation. Weak retrieval leads to poor answers. Both components must work well.
+
+Embeddings enable semantic search. This allows matching by meaning instead of keywords. It is a core idea in modern NLP.
+
+One limitation of embeddings is loss of exact detail. They capture general meaning but may miss specifics. This can affect precision.
+
+Another limitation is computational cost. Creating and comparing embeddings requires resources. Optimization is often needed.
+
+Despite limitations, embeddings are powerful tools. They are widely used in AI systems. They are essential for RAG pipelines.
