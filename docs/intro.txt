@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation, often called RAG, combines document retrieval with text generation.
+
+In a simple pipeline, documents are split into chunks and represented as vectors.
+When a user asks a question, the system retrieves the most similar chunks.
+The final answer is generated using those retrieved chunks as context.
+
+RAG helps reduce hallucinations by grounding responses in known source text.

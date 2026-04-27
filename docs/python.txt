@@ -1,0 +1,8 @@
+Python is a high-level programming language known for readability and a large ecosystem.
+
+Common Python data libraries include NumPy for arrays and pandas for tabular data.
+Machine learning workflows often use scikit-learn for classical models.
+
+A virtual environment helps isolate project dependencies.
+On Windows, you can usually activate it with:
+venv\Scripts\activate
