@@ -1,4 +1,4 @@
-Embeddings are numerical representations of text. They convert words, sentences, or documents into vectors of numbers. These vectors allow machines to compare meaning mathematically.
+Embeddings are numerical representations of text. embeddings work to convert words, sentences, or documents into vectors of numbers. These vectors allow machines to compare meaning mathematically.
 
 Similar texts usually have similar embeddings. For example, "car" and "vehicle" are close in vector space. This reflects their related meaning.
 
