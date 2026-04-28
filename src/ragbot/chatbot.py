@@ -10,11 +10,11 @@ def answer_question(docs_dir: Path, query: str, top_k: int) -> str:
 
     context = retrieve_context(docs_dir, query, top_k)
     if not context:
-        return "I could not find relevant context in the knowledge base."
+        return "I dont have the answer"
 
     prompt = (
         "You are a RAG assistant. Answer using ONLY the retrieved context.\n"
-        "If the answer is not in the context, say you do not know.\n\n"
+        "If the answer is not in the context, reply with exactly: I dont have the answer\n\n"
         f"Question:\n{query}\n\nRetrieved context:\n{context}\n\nAnswer:"
     )
     return generate(prompt)
