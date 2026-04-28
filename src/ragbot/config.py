@@ -1,6 +1,6 @@
 from pathlib import Path
 
-OLLAMA_MODEL = "llama3.2"
+OLLAMA_MODEL = "phi3:mini"
 EMBED_MODEL = "nomic-embed-text"
 OLLAMA_KEEP_ALIVE = "24h"
 
