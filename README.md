@@ -57,7 +57,6 @@ python main.py
 This starts chatbot mode directly. No command-line arguments needed.
 Inside chat:
 - Type your question normally.
-- Type `/add` to add knowledge text (finish with `END` on a new line).
 - Type `/exit` to quit.
 
 ## Optional file-based data
